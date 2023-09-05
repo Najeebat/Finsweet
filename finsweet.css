@@ -1,0 +1,102 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 14px 10px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    border-right: 1px solid gray;
+    padding-right: 20px;
+
+}
+nav ul li{
+    list-style: none;
+}
+nav .right-contact{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+nav .right-contact .right-contact-text p{
+   font-size: 14px;
+   line-height: 15px;
+}
+main{
+    height: 91vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main .container{
+    height: 80%;
+    width: 100%;
+    display: flex;
+}
+main .container .left-text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main .container .left-text .content{
+    width: 80%;
+    font-size: 20px;
+}
+main .left-text button{
+    padding: 15px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #ff6433;
+    color: #ffffff;
+    border: 1px solid rgb(235, 167, 116);
+    box-shadow: 1px 1px 5px lightskyblue;
+    width: 25%;
+}
+main .left-text .opening-time{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding-top: 20px;
+}
+main .left-text .opening-time .time-text h5{
+    font-weight: lighter;
+    font-size: 10px;
+    line-height: 18px;
+    color: #939191;
+
+}
+main .left-text .opening-time .time-text h3{
+    font-weight: lighter;
+    font-size: 13px;
+    line-height: 31px;
+    color: #1e1b1b;
+}
+main .container .right-img{
+    width: 50%;
+    height: 100%;
+    background-color: aquamarine;
+    background-image: url(right\ container\ img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
