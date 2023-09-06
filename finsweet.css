@@ -35,6 +35,10 @@ nav .right-contact{
 nav .right-contact .right-contact-text p{
    font-size: 14px;
    line-height: 15px;
+   margin: 0;
+}
+nav .right-contact .right-contact-text .assist{
+    color: #939191;
 }
 main{
     height: 91vh;
@@ -82,6 +86,7 @@ main .left-text .opening-time .time-text h5{
     font-size: 10px;
     line-height: 18px;
     color: #939191;
+    margin: 0;
 
 }
 main .left-text .opening-time .time-text h3{
@@ -89,14 +94,28 @@ main .left-text .opening-time .time-text h3{
     font-size: 13px;
     line-height: 31px;
     color: #1e1b1b;
+    text-align: center;
+    margin: 0;
 }
 main .container .right-img{
     width: 50%;
     height: 100%;
-    background-color: aquamarine;
     background-image: url(right\ container\ img.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+}
+main .container .right-img .service{
+    position: absolute;
+    left: -20%;
+    top: 0;
+
+}
+main .container .right-img .rating{
+    position: absolute;
+    right: -18%;
+    bottom: 0;
+    
 }
 
