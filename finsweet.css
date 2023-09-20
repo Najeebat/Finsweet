@@ -1,20 +1,26 @@
-body{
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
 }
 header{
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto;
-    padding: 14px 10px;
+   padding: 10px 70px;
+    background-color: #ffffff;
+    position: fixed;
+  
+   z-index: 50;
+   
 }
+
 nav{
     display: flex;
     align-items: center;
-    column-gap: 20px;
+    column-gap: 10px;
 }
 nav ul{
     display: flex;
@@ -40,19 +46,19 @@ nav .right-contact .right-contact-text p{
 nav .right-contact .right-contact-text .assist{
     color: #939191;
 }
-main{
-    height: 91vh;
-    width: 80%;
+.parent-flex{
+    height: 100vh;
+    width: 100%;
     margin: auto;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-main .container{
+.container{
     height: 80%;
-    width: 100%;
+    width: 80%;
     display: flex;
+    margin-top: 30px;
 }
 main .container .left-text{
     width: 50%;
@@ -118,4 +124,383 @@ main .container .right-img .rating{
     bottom: 0;
     
 }
+#car-service{
+    height: 100vh;
+    background-color: #E2E6E9;
+}
+#car-service .container .left-text{
+    width: 50%;
+    height: 100%;
+    background-color: #E2E6E9;
+   
+}
+#car-service .container .left-text h1{
+    font-family: 'Manrope', sans-serif;
+    color:#1E1B1B;
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 700;
+    margin-left: 50px;
+}
+#car-service .container .left-text .settings{
+    display: flex;
+    margin-left: 50px;
+    column-gap: 20px;
+    margin-top: 20px;
 
+}
+#car-service .container .left-text .settings i{
+    background-color: #ffffff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#car-service .container .left-text .settings h4{
+    font-size: 25px;
+}
+#car-service .container .left-text p{
+    margin-left: 100px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+#car-service .container .left-text .know-more{
+    display: flex;
+   margin-left: 100px;
+    margin-top: 20px;
+    
+}
+#car-service .container .left-text .know-more h3{
+    padding-right: 20px;
+}
+
+#car-service .container .left-text .know-more i{
+    padding-top: 5px;
+}
+
+#car-service .container .right-text{
+    background-color: #E2E6E9;
+}
+
+#car-service .container .right-text h1{
+    font-family: 'Manrope', sans-serif;
+    color:#1E1B1B;
+    font-size: 35px;
+    line-height: 50px;
+    font-weight: 700;
+    margin-left: 50px;
+}
+#car-service .container .right-text h2{
+    background-color: #ffffff;
+    height: 50px;
+}
+
+#car-service .container .right-text .quote-flex input{
+    width: 500px;
+    height: 65px;
+    padding-left: 50px;
+    margin-left: 50px;
+    margin-top: 5px;
+    font-size: 15px;
+    border: 1px solid #E2E6E9;
+}
+#car-service .container .right-text  button{
+    background-color: #ff6433;
+    padding: 15px 30px;
+    color: #ffffff;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid #ff6433;
+}
+
+
+.get-a-quote .container .left-text-quote{
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff;
+}
+.get-a-quote .container .left-text-quote h1{
+    font-family: 'Manrope', sans-serif;
+    color:#1E1B1B;
+    font-size: 35px;
+    line-height: 50px;
+    font-weight: 700;
+    margin-left: 50px;
+    padding-right: 20px;
+    margin-top: 80px;
+}
+
+.get-a-quote .container .left-text-quote p{
+    padding-left: 50px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.get-a-quote .container .left-text-quote button{
+    background-color: #ff6433;
+    padding: 15px 30px;
+    color: #ffffff;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid #ff6433;
+}
+.get-a-quote .container .right-text-quote{
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.get-a-quote .container .right-text-quote .settings{
+    display: flex;
+    margin-left: 50px;
+    column-gap: 20px;
+    margin-top: 70px;
+
+}
+
+.get-a-quote .container .right-text-quote .settings h4{
+    font-size: 20px;
+    font-weight: 700;
+
+}
+.get-a-quote .container .right-text-quote .settings h2{
+    background-color: #2e0fdc;
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+
+}
+
+.get-a-quote .container .right-text-quote p{
+    margin-left: 65px;
+    margin-top: 20px;
+    font-size: 16px;
+    border-left: 1px dotted #e72626 ;
+    padding-left: 40px;
+}
+.get-a-quote .container .right-text-quote #third-p{
+    margin-left: 65px;
+    margin-top: 10px;
+    font-size: 16px;
+    border: none;
+}
+/* offer section*/
+.offer{
+    height: 100vh;
+    width: 100%;
+    background-color: #E2E6E9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.offer .container-offer{
+    height: 90%;
+    width: 80%;
+    background-color: #E2E6E9;
+    text-align: center;
+}
+.offer .container-offer h3{
+    margin-top: 30px;
+    font-size: 20px;
+    color: #1E1B1B;
+}
+.offer .container-offer h1{
+    font-size: 35px;
+    color: #1E1B1B;
+}
+
+.offer .container-offer .offer-box{
+    display: flex;
+    height: 50%;
+    column-gap: 3px;
+    margin-top: 40px;
+    margin-left: 230px;
+}
+
+.offer .container-offer .offer-box .offer-boxA{
+    height: 150px;
+    width: 150px;
+    background-color: #ffffff;
+}
+.offer .container-offer .offer-box .offer-boxB{
+    height: 150px;
+    width: 150px;
+    background-color: #ffffff;
+}
+.offer .container-offer .offer-box .offer-boxC{
+    height: 150px;
+    width: 150px;
+    background-color: #ff6433;
+    color: #ffffff;
+}
+.offer .container-offer .offer-box .offer-boxD{
+    height: 150px;
+    width: 150px;
+    background-color: #ffffff;
+}
+.offer .container-offer .offer-boxes{
+    display: flex;
+    position: absolute;
+    top: 0;
+    column-gap: 3px;
+    margin-top: 345px;
+    margin-left: 230px;
+    
+    
+}
+.offer .container-offer{
+    position: relative;
+}
+.offer .container-offer .offer-boxes .offer-boxA{
+    height: 150px;
+    width: 150px;
+    background-color: #ffffff;
+}
+.offer .container-offer .offer-boxes .offer-boxB{
+    height: 150px;
+    width: 150px;
+    background-color: #ffffff;
+}
+.offer .container-offer .offer-boxes .offer-boxC{
+    height: 150px;
+    width: 150px;
+    background-color: #ffffff;
+}
+.offer .container-offer .offer-boxes .offer-boxD{
+    height: 150px;
+    width: 150px;
+    background-color: #ffffff;
+}
+
+.offer .container-offer .offer-boxes i{
+    margin-top: 70px;
+}
+.offer .container-offer .offer-box i{
+    margin-top: 70px;
+}
+
+.offer .container-offer .offer-box h5{
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.offer .container-offer .offer-boxes h5{
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.offer .container-offer .offer-box .offer-boxA i{
+    margin-top: 79px;
+}
+
+.offer .container-offer .offer-box .offer-boxC i{
+    margin-top: 79px;
+}
+.offer .container-offer .offer-box .offer-boxD i{
+    margin-top: 79px;
+}
+
+.offer .container-offer .learn-more{
+    display: flex;
+   margin-left: 100px;
+    position: absolute;
+    right: 0;
+    margin-top: 15px;
+    
+}
+.offer .container-offer .learn-more h3{
+    font-size: 15px;
+    padding-right: 10px;
+    
+}
+
+.offer .container-offer .learn-more i{
+   margin-top: 35px;
+   margin-right:243px;
+}
+
+/*Get-in-touch*/
+#get-in-touch{
+    height: 70vh;
+    width: 100%;
+}
+#get-in-touch .first-row{
+    height: 75%;
+    width: 100%;
+    display: flex;
+}
+#get-in-touch .first-row .left-car{
+    width: 50%;
+    height: 100%;
+    background-image: url(car-left.png);
+   background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#get-in-touch .first-row .left-car .left-car-card{
+height: 100%;
+width: 70%;
+background-color: #ff6433;
+}
+
+#get-in-touch .first-row .left-car .left-car-card h1{
+   color: #ffffff;
+   font-size: 30px;
+   margin-left: 40px;
+   margin-top: 80px;
+}
+
+#get-in-touch .first-row .left-car .left-car-card button{
+    background-color: #000000;
+    padding: 15px 30px;
+    color: #ffffff;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid #ff6433;
+    
+}
+
+#get-in-touch .first-row .right-car{
+    width: 50%;
+    height: 100%;
+    background-image: url(car-right.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#get-in-touch .second-row{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#get-in-touch .second-row .container{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#get-in-touch .second-row .container h1{
+    color:  #661CE7;
+    font-weight: 800px;
+    font-size: 35px;
+}
+#get-in-touch .second-row .container p{
+    font-size: 14px;
+    font-weight: 500px;
+}
