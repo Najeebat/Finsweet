@@ -4,7 +4,6 @@
     box-sizing: border-box;
     font-family: 'Manrope', sans-serif;
     
-    
 }
 header{
     width: 100%;
@@ -21,7 +20,6 @@ header{
     align-items: center;
     margin: auto;
     background-color: #ffffff;
- 
 }
 
 nav{
@@ -82,14 +80,14 @@ main .container .left-text .content{
     font-size: 20px;
 }
 main .left-text button{
-    padding: 15px;
+    padding: 10px;
     margin-top: 20px;
     border-radius: 10px;
     background-color: #ff6433;
     color: #ffffff;
     border: 1px solid rgb(235, 167, 116);
     box-shadow: 1px 1px 5px lightskyblue;
-    width: 25%;
+    white-space: nowrap;
 }
 main .left-text .opening-time{
     display: flex;
@@ -134,13 +132,14 @@ main .container .right-img .rating{
     bottom: 0;
     
 }
+
+/* section1 */
+
 #car-service{
-    height: 100vh;
     background-color: #E2E6E9;
 }
 #car-service .container .left{
     width: 50%;
-    height: 100%;
     background-color: #E2E6E9;
    
 }
@@ -171,6 +170,7 @@ main .container .right-img .rating{
 }
 #car-service .container .left .settings h4{
     font-size: 25px;
+    white-space: nowrap;
 }
 #car-service .container .left p{
     margin-left: 100px;
@@ -181,7 +181,7 @@ main .container .right-img .rating{
     display: flex;
    margin-left: 100px;
     margin-top: 20px;
-    
+    white-space: nowrap;
 }
 #car-service .container .left .know-more h3{
     padding-right: 20px;
@@ -227,10 +227,10 @@ main .container .right-img .rating{
     border: 1px solid #ff6433;
 }
 
+/* section2 */
 
 .get-a-quote .container .left-text-quote{
     width: 50%;
-    height: 100%;
     background-color: #ffffff;
 }
 .get-a-quote .container .left-text-quote h1{
@@ -242,6 +242,8 @@ main .container .right-img .rating{
     margin-left: 50px;
     padding-right: 20px;
     margin-top: 80px;
+    white-space: nowrap;
+
 }
 
 .get-a-quote .container .left-text-quote p{
@@ -260,7 +262,6 @@ main .container .right-img .rating{
 }
 .get-a-quote .container .right-text-quote{
     width: 50%;
-    height: 100%;
     background-color: #ffffff;
 }
 
@@ -268,7 +269,7 @@ main .container .right-img .rating{
     display: flex;
     margin-left: 50px;
     column-gap: 20px;
-    margin-top: 70px;
+    margin-top: 40px;
 
 }
 
@@ -280,8 +281,7 @@ main .container .right-img .rating{
 .get-a-quote .container .right-text-quote .settings h2{
     background-color: #2e0fdc;
     color: #ffffff;
-    width: 30px;
-    height: 30px;
+    padding: 10px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -303,9 +303,11 @@ main .container .right-img .rating{
     font-size: 16px;
     border: none;
 }
+
+
 /* offer section*/
 .offer{
-    height: 100vh;
+    height: auto;
     width: 100%;
     background-color: #E2E6E9;
     display: flex;
@@ -327,130 +329,62 @@ main .container .right-img .rating{
     font-size: 35px;
     color: #1E1B1B;
 }
+ .learn-more{
+    margin-bottom: 30px;
+    margin-top: 30px;
+ }
+ .learn-more span{
+    font-size: 20px;
+    color: #1E1B1B;
+ }
 
-.offer .container-offer .offer-box{
+ .learn-more .i{
+   padding-top: 20px;
+ }
+
+ .containerr {
     display: flex;
-    height: 50%;
-    column-gap: 3px;
-    margin-top: 40px;
-    margin-left: 230px;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; Optional: Set a minimum height to center vertically */
 }
 
-.offer .container-offer .offer-box .offer-boxA{
-    height: 150px;
-    width: 150px;
-    background-color: #ffffff;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 8px; /* Adjust the space between rows and columns as needed */
 }
-.offer .container-offer .offer-box .offer-boxB{
-    height: 150px;
-    width: 150px;
-    background-color: #ffffff;
+
+.grid-item {
+    background-color: #fff;
+    padding-bottom: 60px;
+    padding-top: 15px;
+    text-align: center;
 }
-.offer .container-offer .offer-box .offer-boxC{
-    height: 150px;
-    width: 150px;
+
+.wheel{
     background-color: #ff6433;
-    color: #ffffff;
-}
-.offer .container-offer .offer-box .offer-boxD{
-    height: 150px;
-    width: 150px;
-    background-color: #ffffff;
-}
-.offer .container-offer .offer-boxes{
-    display: flex;
-    position: absolute;
-    top: 0;
-    column-gap: 3px;
-    margin-top: 345px;
-    margin-left: 230px;
-    
-    
-}
-.offer .container-offer{
-    position: relative;
-}
-.offer .container-offer .offer-boxes .offer-boxA{
-    height: 150px;
-    width: 150px;
-    background-color: #ffffff;
-}
-.offer .container-offer .offer-boxes .offer-boxB{
-    height: 150px;
-    width: 150px;
-    background-color: #ffffff;
-}
-.offer .container-offer .offer-boxes .offer-boxC{
-    height: 150px;
-    width: 150px;
-    background-color: #ffffff;
-}
-.offer .container-offer .offer-boxes .offer-boxD{
-    height: 150px;
-    width: 150px;
-    background-color: #ffffff;
+    color: #fff;
 }
 
-.offer .container-offer .offer-boxes i{
-    margin-top: 70px;
-}
-.offer .container-offer .offer-box i{
-    margin-top: 70px;
-}
-
-.offer .container-offer .offer-box h5{
-    font-weight: 600;
+.grid-item h5{
     font-size: 12px;
+    padding: 20px;
 }
 
-.offer .container-offer .offer-boxes h5{
-    font-weight: 600;
-    font-size: 12px;
-}
-
-.offer .container-offer .offer-box .offer-boxA i{
-    margin-top: 79px;
-}
-
-.offer .container-offer .offer-box .offer-boxC i{
-    margin-top: 79px;
-}
-.offer .container-offer .offer-box .offer-boxD i{
-    margin-top: 79px;
-}
-
-.offer .container-offer .learn-more{
-    display: flex;
-   margin-left: 100px;
-    position: absolute;
-    right: 0;
-    margin-top: 15px;
-    
-}
-.offer .container-offer .learn-more h3{
-    font-size: 15px;
-    padding-right: 10px;
-    
-}
-
-.offer .container-offer .learn-more i{
-   margin-top: 35px;
-   margin-right:243px;
-}
-
-/*Get-in-touch*/
+    /*Get-in-touch*/
 #get-in-touch{
-    height: 70vh;
+    
     width: 100%;
+   
 }
 #get-in-touch .first-row{
-    height: 75%;
     width: 100%;
     display: flex;
 }
 #get-in-touch .first-row .left-car{
     width: 50%;
-    height: 100%;
+    height: 50vh;
     background-image: url(car-left.png);
    background-size: cover;
     background-repeat: no-repeat;
@@ -484,7 +418,7 @@ background-color: #ff6433;
 
 #get-in-touch .first-row .right-car{
     width: 50%;
-    height: 100%;
+    height: 50vh;
     background-image: url(car-right.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -515,11 +449,419 @@ background-color: #ff6433;
     font-weight: 500px;
 }
 
-@media screen and (max-width: 425px) {
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    header{
+
+        width: 100%;
+       flex-direction:column ;
+       z-index: 100;
+      
+    }
+    header .container{
+        flex-direction:column ;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav{
+        flex-direction: column;
+    }
+    
+    nav ul{
+        border: none;
+       
+    }
+    
+    nav ul li{
+        font-size: 18px;
+        white-space: nowrap;
+        margin: auto;
+        padding-top: 5px;
+    }
+
+    .right-contact .right-contact-icon{
+        width: 40px;
+        height: 40px;
+    }
+
+    .right-contact .right-contact-text p{
+        font-size: 20px;
+    }
+    
+    .Logo{
+       font-size: 12px;
+    }
+    
+    /* main */
+    
+    .parent-flex{
+        height: auto;
+        flex-direction: column;
+    
+    }
+    .container{
+        margin-top: 100px;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+        
+    main .container  .left{
+        width: 100%;
+        /* background-color: #2e0fdc; */
+    }
+    
+    main .container  .left .content h1{
+        font-size: 35px;
+        padding-top: 40px;
+    }
+
+    main .container  .left .content .btn{
+       padding: 20px;
+    }
+
+    main .container .right-img .service{
+        position: absolute;
+       left: -10;
+        bottom: 0;
+        width: 50%;
+        
+    } 
+    
+    main .container .right-img .rating{
+        position: absolute;
+       right: -10;
+        bottom: 0;
+        width: 50%;
+        
+    } 
+        
+    main .container .right {
+    height: 50vh;
+    width: 100%;
+    margin-top: 10px;
+    
+    }
+    
+    main .container .right-img .service{
+        position: absolute;
+        left: -16%;
+        top: 0;
+    
+    }
+    
+    main .container .right-img .rating{
+        position: absolute;
+        right: -14%;
+        bottom: 0;
+        
+    }
+    
+    main .container .left-text  .content{
+        width: 80%;
+        font-size: 10px;
+        margin: auto;
+    }
+    
+    main .left-text .opening-time{
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+        padding-top: 20px;
+        margin-left: 30px;
+    }
+
+    main .left-text .opening-time .time-text h5{
+        font-size: 13px;
+    }
+    
+    main .left-text button{
+       
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 10px;
+        background-color: #ff6433;
+        color: #ffffff;
+        border: 1px solid rgb(235, 167, 116);
+        box-shadow: 1px 1px 5px lightskyblue;
+       
+    }
+    main .container  .right-img{
+        height: 70vh;
+    }
+    
+    main .container .right-img .service{
+        position: absolute;
+        left: -10%;
+        top: 0;
+    
+    }
+    main .container .right-img .rating{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+    
+    /* section1a */
+    
+    #car-service .container .left{
+       margin: auto;
+       padding-bottom: 20px;
+    }
+    
+    #car-service{
+        height: auto;
+    }
+     
+    
+    #car-service .container .left h1{
+        font-family: 'Manrope', sans-serif;
+        color:#1E1B1B;
+        font-size: 30px;
+        line-height: 60px;
+        font-weight: 700;
+        margin-left: 20px;
+        white-space: nowrap;
+    }
+    
+    #car-service .container .left .settings h4{
+       font-size: 20px;
+       
+    }
+    
+    #car-service .container .left .settings i{
+        background-color: #ffffff;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        
+    
+        
+    }
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    #car-service .container .left p{
+        margin-left: 100px;
+        margin-top: 8px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+    
+    #car-service .container .left .know-more{
+        display: flex;
+       margin-left: 100px;
+        margin-top: 20px;
+        white-space: nowrap;
+        font-size: 14px;
+    }
+
+  
+    
+    /* section1b */
+
+    #car-service .container .right-text{
+        margin: auto;
+        padding-bottom: 20px;
+     }
+    
+    #car-service .container .right-text h1{
+        font-family: 'Manrope', sans-serif;
+        color:#1E1B1B;
+        font-size: 25px;
+        line-height: 50px;
+        font-weight: 700;
+        margin-left: 50px;
+        white-space: nowrap;
+    }
+    
+    #car-service .container .right-text .quote-flex input{
+        width: 400px;
+        height: 60px;
+        padding-left: 20px;
+        margin-left: 50px;
+        margin-top: 5px;
+        font-size: 12px;
+        border: 1px solid #E2E6E9;
+    }
+    
+    #car-service .container .right-text  button{
+        background-color: #ff6433;
+        padding: 15px 20px;
+        color: #ffffff;
+        margin-left: 50px;
+        margin-top: 20px;
+        border-radius: 10px;
+        border: 1px solid #ff6433;
+        margin-bottom: 30px;
+        white-space: nowrap;
+    }
+    
+    /* section2A */
+
+    .get-a-quote .container .left-text-quote{
+        margin: auto;
+
+    }
+    
+    .get-a-quote .container .left-text-quote h1{
+        font-size: 26px;
+        white-space: nowrap;
+        margin-left: 20px;
+    }
+    
+    .get-a-quote .container .left-text-quote p{
+        margin-top: 8px;
+        font-size: 15px;
+        white-space: nowrap;
+        padding-left: 20px;
+    }
+    
+    .get-a-quote .container .left-text-quote button{
+        background-color: #ff6433;
+        padding: 15px 30px;
+        color: #ffffff;
+        margin-left: 24px;
+        margin-top: 20px;
+        border-radius: 10px;
+        border: 1px solid #ff6433;
+        margin-bottom: 30px;
+        white-space: nowrap;
+    }
+    
+    /* section2B */
+    
+    .get-a-quote .container .right-text-quote{
+        padding-bottom: 30px;
+        margin: auto;
+    }
+    
+    .get-a-quote .container .right-text-quote .settings h4{
+        font-size: 18px;
+        font-weight: 700;
+        white-space: nowrap;
+    
+    }
+    
+    .get-a-quote .container .right-text-quote .settings h2{
+        background-color: #2e0fdc;
+        color: #ffffff;
+        padding: 10px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        
+    
+    }
+    
+    .get-a-quote .container .right-text-quote p{
+        margin-left: 65px;
+        font-size: 12px;
+        border-left: 1px dotted #e72626 ;
+        padding-left: 40px;
+        white-space: nowrap;
+    }
+    
+    .get-a-quote .container .right-text-quote #third-p{
+        font-size: 12px;
+        white-space: nowrap;
+    }
+    
+    /* section3A */
+    
+    .offer .container-offer h3{
+        margin-top: 30px;
+        font-size: 14px;
+        color: #1E1B1B;
+    }
+    
+    .offer .container-offer h1{
+        font-size: 20px;
+        color: #1E1B1B;
+    }
+    .offer .container-offer .offer-box{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        row-gap: 5px;
+    }
+    
+       
+    
+    #get-in-touch .first-row{
+    flex-direction: column;
+      
+    }
+    
+    #get-in-touch .first-row .left-car{
+        width: 100%;
+    }
+    
+    #get-in-touch .first-row .right-car{
+          width: 100%;
+          margin-top: 10px;
+    }
+    
+    #get-in-touch .second-row{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #get-in-touch .second-row .container{
+        width: 90%;
+        padding: 20px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+    #get-in-touch .second-row .container h1{
+        color:  #661CE7;
+        font-weight: 800px;
+        font-size: 20px;
+        text-align: center;
+       
+    }
+    #get-in-touch .second-row .container p{
+        font-size: 10px;
+        font-weight: 500px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
 header{
-    position: static;
+     position: static;
     width: 100%;
    flex-direction:column ;
+   z-index: 100;
   
 }
 header .container{
@@ -534,44 +876,81 @@ nav{
 
 nav ul{
     border: none;
+   
 }
 
 nav ul li{
     font-size: 14px;
+    white-space: nowrap;
+    margin: auto;
 }
 
 .Logo{
    font-size: 12px;
 }
 
+/* main */
+
 .parent-flex{
     height: auto;
     flex-direction: column;
+
 }
 .container{
+    margin-top: 100px;
     flex-direction: column;
     width: 100%;
     
 }
-.left{
-    height: 50%;
+    
+main .container  .left{
     width: 100%;
-    background-color: #2e0fdc;
+    margin: auto;
 }
-.right {
-height: 70vh;
+
+main .container .right-img .rating{
+    position: absolute;
+   left: 0;
+    bottom: 0;
+    
+} 
+
+    
+main .container .right {
+height: 50vh;
 width: 100%;
 margin-top: 10px;
 
-background-color: darkgoldenrod;
+}
 
+main .container .right-img .service{
+    position: absolute;
+    left: -16%;
+    top: 0;
 
+}
+
+main .container .right-img .rating{
+    position: absolute;
+    right: -14%;
+    bottom: 0;
+    
 }
 
 main .container .left-text  .content{
     width: 80%;
     font-size: 10px;
+    margin: auto;
 }
+
+main .left-text .opening-time{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding-top: 20px;
+    margin-left: 30px;
+}
+
 main .left-text button{
    
     padding: 10px;
@@ -587,33 +966,239 @@ main .container  .right-img{
     height: 70vh;
 }
 
+main .container .right-img .service{
+    position: absolute;
+    left: -10%;
+    top: 0;
+
+}
+main .container .right-img .rating{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    
+}
+
+/* section1a */
+
+#car-service .container .left{
+    margin-bottom: 30px;
+}
+
 #car-service{
     height: auto;
 }
  
+
 #car-service .container .left h1{
     font-family: 'Manrope', sans-serif;
     color:#1E1B1B;
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 60px;
     font-weight: 700;
-    margin-left: 50px;
+    margin-left: 20px;
+    white-space: nowrap;
+}
+
+#car-service .container .left .settings h4{
+   font-size: 15px;
+   
 }
 
 #car-service .container .left .settings i{
     background-color: #ffffff;
-    padding: 10px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 12px;
+    padding: 10px;
+    
+
+    
 }
-#car-service .container .left .settings h4{
-    font-size: 12px;
+.grid-container {
+    grid-template-columns: 1fr;
 }
+
 #car-service .container .left p{
     margin-left: 100px;
-    padding-top: 10px;
-    font-size: 13px;
+    margin-top: 8px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+#car-service .container .left .know-more{
+    display: flex;
+   margin-left: 100px;
+    margin-top: 20px;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+/* section1b */
+
+#car-service .container .right-text h1{
+    font-family: 'Manrope', sans-serif;
+    color:#1E1B1B;
+    font-size: 19px;
+    line-height: 50px;
+    font-weight: 700;
+    margin-left: 50px;
+    white-space: nowrap;
+}
+
+#car-service .container .right-text .quote-flex input{
+    width: 260px;
+    height: 50px;
+    padding-left: 20px;
+    margin-left: 50px;
+    margin-top: 5px;
+    font-size: 12px;
+    border: 1px solid #E2E6E9;
+}
+
+#car-service .container .right-text  button{
+    background-color: #ff6433;
+    padding: 15px 20px;
+    color: #ffffff;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid #ff6433;
+    margin-bottom: 30px;
+    white-space: nowrap;
+}
+
+/* section2A */
+
+.get-a-quote .container .left-text-quote h1{
+    font-size: 18px;
+    white-space: nowrap;
+    margin-left: 20px;
+}
+
+.get-a-quote .container .left-text-quote p{
+    margin-top: 8px;
+    font-size: 12px;
+    white-space: nowrap;
+    padding-left: 20px;
+}
+
+.get-a-quote .container .left-text-quote button{
+    background-color: #ff6433;
+    padding: 15px 30px;
+    color: #ffffff;
+    margin-left: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid #ff6433;
+    margin-bottom: 30px;
+    white-space: nowrap;
+}
+
+/* section2B */
+
+.get-a-quote .container .right-text-quote{
+    padding-bottom: 30px;
+}
+
+.get-a-quote .container .right-text-quote .settings h4{
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+
+}
+
+.get-a-quote .container .right-text-quote .settings h2{
+    background-color: #2e0fdc;
+    color: #ffffff;
+    padding: 6px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    
+
+}
+
+.get-a-quote .container .right-text-quote p{
+    margin-left: 60px;
+    font-size: 12px;
+    border-left: 1px dotted #e72626 ;
+    padding-left: 40px;
+    white-space: nowrap;
+}
+
+.get-a-quote .container .right-text-quote #third-p{
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+/* section3A */
+
+.offer .container-offer h3{
+    margin-top: 30px;
+    font-size: 14px;
+    color: #1E1B1B;
+}
+
+.offer .container-offer h1{
+    font-size: 20px;
+    color: #1E1B1B;
+}
+.offer .container-offer .offer-box{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    row-gap: 5px;
+}
+
+   
+
+#get-in-touch .first-row{
+flex-direction: column;
+  
+}
+
+#get-in-touch .first-row .left-car{
+    width: 100%;
+}
+
+#get-in-touch .first-row .right-car{
+      width: 100%;
+      margin-top: 10px;
+}
+
+#get-in-touch .second-row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#get-in-touch .second-row .container{
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+#get-in-touch .second-row .container h1{
+    color:  #661CE7;
+    font-weight: 800px;
+    font-size: 20px;
+    text-align: center;
+   
+}
+#get-in-touch .second-row .container p{
+    font-size: 10px;
+    font-weight: 500px;
 }
 }
